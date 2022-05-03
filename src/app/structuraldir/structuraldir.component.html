@@ -1,0 +1,67 @@
+<body>
+<div class="container">
+    <div class='line'>
+        <h2 class='pop-outin'>Structural Demo</h2>
+      </div>
+      
+      <div class="line">
+        <h2 class='lineUp'>For Demo</h2>
+      </div>
+ 
+
+<ol>
+   <li *ngFor="let frut of fruits; index as i">
+    {{frut}}
+       <!-- {{i+1}}-{{frut}} -->
+   </li> 
+</ol>
+
+<div class='line'>
+    <h2 class='flipX'>Ng IF  Demo</h2>
+  </div>
+
+<div *ngIf="disp;then logIn; else logOut">
+    <h2>Check in or LogOut</h2>
+</div>
+<ng-template #logIn>
+   <i> Login Content </i>
+</ng-template>
+
+<ng-template #logOut>
+    Nothing 
+</ng-template>
+
+<div class='line'>
+    <h2 class='flipX'>Ng Switch Demo</h2>
+  </div>
+
+
+<div [ngSwitch]="switch">
+
+    <h2 *ngSwitchCase="1">Kannada </h2>
+    <h2 *ngSwitchCase="2"> English  </h2>
+    <h2 *ngSwitchCase="3">Marathi </h2>
+    <h2 *ngSwitchCase="4">Telgu </h2>
+    <h2 *ngSwitchDefault> Hindi   </h2>  
+</div>
+</div>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
